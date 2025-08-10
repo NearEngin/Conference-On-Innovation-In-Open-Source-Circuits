@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference</title>
+     <link rel="icon" type="image/x-icon" href="./assets/www.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&amp;display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Outfit:wght@100..900&amp;family=PT+Sans:ital,wght@1,700&amp;display=swap" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('./assets/bgnd.jpg');
+            background-size: cover;
+            background-position: center;
+            color: rgb(255, 255, 255);
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            /* Optional: Tighter spacing */
+        }
+
+        .hero-section p {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+        }
+
+        .pt-sans-bold-italic {
+            font-family: "PT Sans", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .college-logo {
+            max-height: 300px;
+            margin-bottom: 20px;
+            margin-left: 100px;
+            margin-top: 10px;
+        }
+
+        .ccrc-logo {
+            max-height: 90px;
+            margin-bottom: 20px;
+            margin-left: 90px;
+        }
+
+        .important-date {
+            background-color: #f8f9fabe;
+            border-left: 4px solid #343a40;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: rgb(0, 23, 7);
+            color: white;
+            padding: 30px 0;
+        }
+
+        .payment-methods img {
+            max-height: 150px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: rgb(0, 23, 7); backdrop-filter: blur(5px);">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img height="30px" src="./assets/www.png" alt="">CISC 2025
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-uppercase" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-uppercase" href="#home">Home</a>
+                    </li>
+                    
+                    <!--<li class="nav-item mx-2">
+                        <a class="nav-link text-uppercase" href="#dates">Important Dates</a>
+                    </li> -->
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-uppercase" href="#submission">Paper Submission</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-uppercase" href="#registration">Registration</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-uppercase" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <img src="https://fisat.ac.in/wp-content/themes/fisat2022/assets/logo.png" alt="FISAT Logo" class="college-logo">
+            <img style="padding-left: 7%;" height="90px" src="./assets/CISCLOGO1.png" alt="CCRC Logo" class="CISC-logo">
+            <h1 class="display-4 fw-bold mb-3">Conference on Innovation in Open-Source Circuits
+            </h1>
+            <p class="lead mb-4 fst-italic fw-light">Electronics and Communication Heuristics Organization (ECHO)</p>
+            <p>Department of Electronics and Communication Engineering, FISAT</p>
+            <p class="lead mb-4">September 12-13, 2025 | Hybrid Mode (Online & Offline)</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#submission" class="btn btn-light btn-lg px-4">Submit Paper</a>
+                <a href="#registration" class="btn btn-outline-light btn-lg px-4">Registeration Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conference Details -->
+    <section class="py-5" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <h2 class="fw-bold mb-4 pt-sans-bold-italic">About CISC 2025</h2>
+                    <p class="lead">This conference is organized by Department of Electronics and Communication Engineering, FISAT</p>
+                    <p>CISC 2025 aims to bring together researchers, students, academicians, and industry professionals to 
+explore and promote open-source software tools and platforms in hardware design. The conference 
+highlights the paradigm shift towards transparency, collaboration, and cost-effectiveness in circuit 
+and system design through the use of open technologies. </p>
+                    <p>The event will feature paper presentations, keynote talks, and technical workshops focusing on 
+open-source ecosystems driving innovation in hardware. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call for Papers -->
+    <section id="cfp" >
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5 pt-sans-bold-italic"></h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow ">
+                        <div class="card-header bg-dark text-white">
+                            <h4 class="mb-0 p-1 text-center">Key Tracks</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="lead p-2 text-center">We invite original, unpublished research papers and project demonstrations
+                                on the following areas:</p>
+
+                            <div class="row">
+                                <!-- Column 1 -->
+                                <div class="col-md-4">
+                                    <div class="h5 text-dark mb-3"> <img height="30px" src="./assets/www.png" alt=""> Open-Source EDA Tools</div>
+                                    
+                                </div>
+
+                                <!-- Column 2 -->
+                                <div class="col-md-4">
+                                    <div class="h5 text-dark mb-3"><img height="30px" src="./assets/www.png" alt="">RISC-V Architecture & Custom SoC Design</div>
+                                    
+                                </div>
+
+                                <!-- Column 3 -->
+                                <div class="col-md-4">
+                                    <div class="h5 text-dark mb-3"><img height="30px" src="./assets/www.png" alt="">FPGA Development using Open Toolchains</div>
+                                    
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="h5 text-dark mb-3"><img height="30px" src="./assets/www.png" alt="">Hardware-Software Co-Design with Open Frameworks</div>
+                                    
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="h5 text-dark mb-3"><img height="30px" src="./assets/www.png" alt="">AI/ML Acceleration in Hardware via Open Platforms</div>
+                                    
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="h5 text-dark mb-3"><img height="30px" src="./assets/www.png" alt="">IoT and Embedded Systems using Open-Source Tools</div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Paper Submission -->
+    <section class="py-5" id="submission">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5 pt-sans-bold-italic">Call for papers</h2>
+            <div class="row justify-content-center">
+                <p class="col-lg-10 mx-auto text-center">We invite original research papers and project demos from students in the above-mentioned tracks. 
+Selected papers will be published in the conference proceedings with ISBN.</p>
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-header bg-dark text-white">
+                            <h4 class="mb-0">Submission Guidelines</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="mb-3">Submit your papers through Microsoft CMT*:</h5>
+                            <a href="https://www.bing.com/search?pglt=417&q=cats&cvid=011262ae148f478ca5fac2e322a0790b&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQLhhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBAAGEDSAQg0MTIwajBqMagCALACAA&FORM=ANNTA1&PC=ACTS" class="btn btn-dark mb-4" target="_blank">
+                                <i class="fas fa-external-link-alt me-2"></i>Submit via Microsoft CMT
+                            </a>
+
+                            <h5 class="mt-3">Paper Template:</h5>
+                            <p>Authors must use the standard conference template for paper submission:</p>
+                            <a href="https://www.overleaf.com/latex/templates/springer-nature-latex-template/myxmhdsbzkyd" class="btn btn-outline-dark">
+                                <i class="fas fa-download me-2"></i>Download Paper Template
+                            </a>
+
+                            <div class="mt-4">
+                                <h5>Submission Guidelines:</h5>
+                                <ul>
+                                    <li>Papers should be in English and should have 6-12 pages.</li>
+                                    <li>All submissions must be in PDF format</li>
+
+                                    <li>Submissions will be peer-reviewed by the technical program committee</li>
+                                </ul>
+
+                            </div>
+                            <div style="font-size:9px;"> *The <a href="https://cmt3.research.microsoft.com">Microsoft CMT service</a> was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<!-- Innovation Challenge -->
+    <section class="py-5" id="innovation-challenge">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5 pt-sans-bold-italic">Workshops</h2>
+            <div class="row justify-content-center g-4">
+                <!-- Frontend Design Card -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-header bg-dark text-white text-center">
+                            <h5 class="mb-0">Workshop1</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-2"><strong>Content Here</strong></p>
+                            <ul class="mb-3">
+                                <li>point1</li>
+                                <li>point2</li>
+                                <li>point3</li>
+                            </ul>
+                            <div class="alert alert-secondary py-2 mb-0">
+                                <span class="fw-bold">Goal:</span> content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Frontend Design Card -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-header bg-dark text-white text-center">
+                            <h5 class="mb-0">Workshop2</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-2"><strong>Content Here</strong></p>
+                            <ul class="mb-3">
+                                <li>point1</li>
+                                <li>point2</li>
+                                <li>point3</li>
+                            </ul>
+                            <div class="alert alert-secondary py-2 mb-0">
+                                <span class="fw-bold">Goal:</span> content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                 <!-- Frontend Design Card -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-header bg-dark text-white text-center">
+                            <h5 class="mb-0">Workshop3</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-2"><strong>Content Here</strong></p>
+                            <ul class="mb-3">
+                                <li>point1</li>
+                                <li>point2</li>
+                                <li>point3</li>
+                            </ul>
+                            <div class="alert alert-secondary py-2 mb-0">
+                                <span class="fw-bold">Goal:</span> content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Frontend Design Card -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-header bg-dark text-white text-center">
+                            <h5 class="mb-0">Workshop4</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-2"><strong>Content Here</strong></p>
+                            <ul class="mb-3">
+                                <li>point1</li>
+                                <li>point2</li>
+                                <li>point3</li>
+                            </ul>
+                            <div class="alert alert-secondary py-2 mb-0">
+                                <span class="fw-bold">Goal:</span> content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center mt-5">
+                <a href="https://forms.gle/9ZCi7qvQQ8ujyaDY7" class="btn btn-dark btn-lg px-5">Register for Workshop</a>
+            </div>
+        </div>
+    </section>
+    <!-- Important Dates
+    <section class="py-5 bg-light" id="dates">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5 pt-sans-bold-italic">Important Dates</h2>
+
+            <div class="row justify-content-center mb-4 p-2 mx-5">
+                <div class="col-md-5 mb-3 mx-5">
+                    <div class="important-date text-center">
+                        <h5>Paper Submission Deadline</h5>
+                        <p class="text-dark"><i class="fas fa-calendar-times me-2"></i>June 12, 2025</p>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-3">
+                    <div class="important-date text-center">
+                        <h5>Notification of Acceptance</h5>
+                        <p class="text-dark"><i class="fas fa-bell me-2"></i>June 14, 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-4 p-2 mx-5">
+                <div class="col-md-5 mb-3 mx-5">
+                    <div class="important-date text-center">
+                        <h5>Conference Dates</h5>
+                        <p class="text-dark"><i class="fas fa-calendar-day me-2"></i>June 17-18, 2025</p>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-3">
+                    <div class="important-date text-center">
+                        <h5>Camera Ready Submission</h5>
+                        <p class="text-dark"><i class="fas fa-file-upload me-2"></i>June 16, 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-dark">Download Conference Schedule (PDF)</a>
+            </div>
+        </div>
+    </section>
+ -->
+
+    
+
+    <!-- Registration -->
+    <section class="py-5 bg-light" id="registration">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5 pt-sans-bold-italic">Registration</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-header bg-dark text-white">
+                            <h4 class="mb-0">Registration Fees</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Category</th>
+                                            <th>Fee</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Paper Presenters (Student)</td>
+                                            <td>₹350/-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Workshop(Per Session</td>
+                                            <td>₹250</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="mt-3">
+                                <p class="text-muted mt-2">Author registeration form will be send as email.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Contact -->
+    <section class="py-5" id="contact">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5 pt-sans-bold-italic">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <h4 class="card-title mb-4">Conference Organizer</h4>
+                            <div class="mb-4">
+                                <h5>Faculty Coordinator: Name</h5>
+                                <h5>Student Coordinator: Name</h5>
+                                <p class="text-muted mb-1">CISC 2025</p>
+                                <p class="text-muted mb-1">Department of Electronicsand Communication Engineering</p>
+                                <p class="text-muted mb-1">Federal Institute of Science and Technology (FISAT)</p>
+                                <p class="text-muted mb-1"><i class="fas fa-envelope me-2"></i> cisc@fisat.ac.in</p>
+                                <p class="text-muted"><i class="fas fa-phone-alt me-2"></i> +91 123456789</p>
+                            </div>
+
+                            <div class="venue-details mt-4">
+                                <h5>Conference Venue</h5>
+                                <p>Federal Institute of Science and Technology (FISAT)</p>
+                                <p>Mookkannoor, Angamaly, Kerala - 683577</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5>CISC 2025</h5>
+                    <p>Organized by the Department of Electronics and Communication Engineering, FISAT.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://fisat.ac.in" class="text-white" target="_blank">FISAT Website</a></li>
+                        <li><a href="#submission" class="text-white">Paper Submission</a></li>
+                        <li><a href="#registration" class="text-white">Registration</a></li>
+                        <li><a href="#contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">© 2025 Department of Electronics and Communication Engineering, FISAT. All rights
+                        reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
