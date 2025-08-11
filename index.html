@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conference</title>
-     <link rel="icon" type="image/x-icon" href="./assets/www.png">
+     <link rel="icon" type="image/x-icon" href="./assets/AAA.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -72,6 +72,51 @@
             max-height: 150px;
             margin: 10px;
         }
+
+        .members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.member-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 280px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+.member-card h3 {
+    margin: 0 0 0.5rem;
+    color: #0e3114;
+}
+
+.member-card p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+header {
+    background-color: #22262a;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
     </style>
 </head>
 <body>
@@ -79,7 +124,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: rgb(0, 23, 7); backdrop-filter: blur(5px);">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img height="30px" src="./assets/www.png" alt="">CISC 2025
+                <img style="filter: invert(80%); padding-right: 20%;" height="30px" src="./assets/AAA.png" alt="">CISC 2025
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -114,8 +159,8 @@
     <!-- Hero Section -->
     <section class="hero-section" id="home">
         <div class="container">
-            <img src="https://fisat.ac.in/wp-content/themes/fisat2022/assets/logo.png" alt="FISAT Logo" class="college-logo">
-            <img style="padding-left: 7%;" height="90px" src="./assets/CISCLOGO1.png" alt="CCRC Logo" class="CISC-logo">
+            
+            <img style="margin-bottom: 7%;" height="90px" src="./assets/FISATxECHOxCISC.png" alt="CCRC Logo" class="CISC-logo">
             <h1 class="display-4 fw-bold mb-3">Conference on Innovation in Open-Source Circuits
             </h1>
             <p class="lead mb-4 fst-italic fw-light">Electronics and Communication Heuristics Organization (ECHO)</p>
@@ -404,8 +449,8 @@ Selected papers will be published in the conference proceedings with ISBN.</p>
                                             <td>₹350/-</td>
                                         </tr>
                                         <tr>
-                                            <td>Workshop(Per Session</td>
-                                            <td>₹250</td>
+                                            <td>Workshop(Per Session)</td>
+                                            <td>₹250/-</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -420,6 +465,55 @@ Selected papers will be published in the conference proceedings with ISBN.</p>
         </div>
         
     </section>
+
+
+<header>
+        <h1>Advisory Members</h1>
+    </header>
+<section class="members">
+        <div class="member-card">
+            <h3>Shimith P R</h3>
+            <p>Chairman, FISAT</p>
+        </div>
+        <div class="member-card">
+            <h3>Jacob Thomas V, PhD</h3>
+            <p>Principal, FISAT</p>
+        </div>
+        <div class="member-card">
+            <h3>Mini P R, PhD</h3>
+            <p>Vice-Principal, FISAT</p>
+        </div>
+        <div class="member-card">
+            <h3>Unni Kartha G, PhD</h3>
+            <p>Dean, Academics, FISAT</p>
+        </div>
+        <div class="member-card">
+            <h3>Bejoy Varghese, PhD</h3>
+            <p>HoD, ECE Department, FISAT</p>
+        </div>
+    </section><header>
+        <h1>Executive Committee</h1>
+    </header>
+
+    <section class="members">
+        <div class="member-card">
+            <h3>Dhanya S</h3>
+            <p>Assistant Professor, ECE Department, FISAT</p>
+        </div>
+        <div class="member-card">
+            <h3>Leena Thomas</h3>
+            <p>Assistant Professor, ECE Department, FISAT</p>
+        </div>
+        <div class="member-card">
+            <h3>Subha Thomas</h3>
+            <p>Assistant Professor, ECE Department, FISAT</p>
+        </div>
+        <div class="member-card">
+            <h3>Neena K.A.</h3>
+            <p>Assistant Professor, ECE Department, FISAT</p>
+        </div>
+    </section>
+
 
     <!-- Contact -->
     <section class="py-5" id="contact">
